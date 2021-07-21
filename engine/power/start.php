@@ -1,5 +1,5 @@
 <?php
-/*$mysqli = new mysqli("localhost","foeimorg","foeim2021@","foeimorg_combine");*/
+/*$mysqli = new mysqli("70.32.23.94","foeimorg","foeim2021@","foeimorg_combine");*/
 
 ?>
 
