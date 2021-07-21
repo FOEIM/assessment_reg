@@ -11,7 +11,7 @@ $foeim = "SELECT * FROM assessment_data WHERE user_email ='$email'";
         $numUsers = mysqli_num_rows($rs);
 
         if($numUsers > 0) {
-            header('location: https://assessment.foeim.org?err=<font color="red">Alredy Regiserterd and you cannot do this again</font>');
+            header('location: https://foeim.github.io/assessment_reg/index.php?err=<font color="red">Alredy Regiserterd and you cannot do this again</font>');
         }
   else
   {
@@ -32,7 +32,7 @@ $message = "
 </tr>
 <tr>
 <td>FOEIM</td>
-<td><a href='https://assessment.foeim.org/engine/source/?email=$to'><button>Click Here To Verify!</button></a></td>
+<td><a href='https://foeim.github.io/assessment_reg/engine/source/?email=$to'><button>Click Here To Verify!</button></a></td>
 </tr>
 </table>
 </body>
@@ -49,7 +49,7 @@ $headers .= 'Cc: office@foeim.org' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 
-header('location: https://assessment.foeim.org?err=<font color="green">Please Check Your Email Inbox or in Spam</font>');
+header('location: https://foeim.github.io/assessment_reg/index.php?err=<font color="green">Please Check Your Email Inbox or in Spam</font>');
 
 
   }
