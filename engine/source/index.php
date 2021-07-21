@@ -1,6 +1,6 @@
 <?php
 error_reporting(1);
-$mysqli = mysqli_connect("localhost","foeimorg","foeim2021@","foeimorg_combine");
+$mysqli = mysqli_connect("70.32.23.94","foeimorg","foeim2021@","foeimorg_combine");
 
 $email = $_GET['email'];
 
