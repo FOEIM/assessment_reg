@@ -9,7 +9,7 @@ $foeim = "SELECT * FROM assessment_data WHERE user_email ='$email'";
         $numUsers = mysqli_num_rows($rs);
 
         if($numUsers > 0) {
-            header('location: https://assessment.foeim.org?err=<font color="red">Alredy Regiserterd and you cannot do this again</font>');
+            header('location: https://foeim.github.io/assessment_reg/index.php?err=<font color="red">Alredy Regiserterd and you cannot do this again</font>');
         }
 else
 {
